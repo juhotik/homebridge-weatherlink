@@ -1,0 +1,25 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "031-45-154"
+    },
+    
+    "description": "This is an example configuration file with WeatherLink accessory and one fake platform.",
+
+    "accessories":[
+        {
+            "accessory":"WeatherLink",
+            "name":"Outside Temperature",
+            "username":"hsksatama"
+        }
+    ],
+
+    "platforms": [
+        {
+            "platform" : "PhilipsHue",
+            "name" : "Hue"
+        }
+    ]
+}
